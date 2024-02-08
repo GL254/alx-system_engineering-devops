@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This shows the listening sockets and
+#+ the PID and name for each socket
+
+function stats()
+{
+	netstat -lp
+}
+stats
