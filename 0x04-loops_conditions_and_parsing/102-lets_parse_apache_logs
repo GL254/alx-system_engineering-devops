@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # This script parses Apahe logs
 awk -F' ' '{ print $1 " " $9 }' apache-access.log
+=======
+# parse log file using awk
+awk '{print $1,$9}' apache-access.log
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e

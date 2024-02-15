@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # It parses /etc/passwd into username, user id
+=======
+# This script parses /etc/passwd into username, user id
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e
 #+ and home directory for the user
 
 while IFS= read -r line

@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # The script displays time for 12 hours and 59 minutes
+<<<<<<< HEAD
 #+ hours diplayed from 0-12
 #+ and minutes from 1-59
+=======
+#+ hours diplayed from 0-12 and minutes from 1-59
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e
 
 hrs=0
 

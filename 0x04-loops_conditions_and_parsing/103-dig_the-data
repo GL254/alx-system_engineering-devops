@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # This script parses Apache logs.
 #+ uses OCCURENCE_NUMBER IP HTTP_CODE format
 awk -F' ' '{ print $1 " " $9 }' apache-access.log | sort | uniq -c | sort -nr
+=======
+# parse sort and count apache log file
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -nr
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e

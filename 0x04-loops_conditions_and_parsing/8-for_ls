@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 # The script displays contents of the current directory
+<<<<<<< HEAD
 #+ they are in list format
 #+ and only the part of the name
 #+ after the first dash is displayed
 #+ does not display hidden files
+=======
+#+ they are in list format and only the part of the name
+#+ after the first dash is displayed
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e
 
 files=$(ls)
 for file in $files

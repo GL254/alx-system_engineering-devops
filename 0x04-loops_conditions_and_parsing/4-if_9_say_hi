@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # This will display "Best School" 10 times, but for the ninth
+=======
+# This script displays "Best School" 10 times, but for the ninth
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e
 #+ iteration, it diplays "Hi" instead
 
 i=1

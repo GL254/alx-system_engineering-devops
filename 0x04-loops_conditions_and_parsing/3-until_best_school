@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Uses until to diplay "Best school" 10 times
+=======
+# This script uses until to diplay "Best school" 10 times
+>>>>>>> 6711d67b4c56038e80f0480d3f8da6d0eb08da7e
 
 i=1
 
