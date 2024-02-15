@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script resolves
+# Localhost to 127.0.0.1 and
+#+ facebook.com to 8.8.8.8
+
+function rep_faceb()
+{
+	cp /etc/hosts ~/hosts.new
+	sed -i "1i8.8.8.8\tfacebook.com" ~/hosts.new
+	cp -f ~/hosts.new /etc/hosts
+}
+rep_faceb
+
+or_txt=$(grep '127.0.0.1' /etc/hosts)
+new_txt="127.0.0.2\tlocalhost"
+
+function rep_loca()
+{
+	cp /etc/hosts ~/hosts.new
+	sed -i 's/'"$or_txt"'/'"$new_txt"'/g' ~/hosts.new
+	cp -f ~/hosts.new /etc/hosts
+}
+rep_loca
