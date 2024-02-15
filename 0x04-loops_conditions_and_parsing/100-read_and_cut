@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# It parses /etc/passwd into username, user id
+#+ and home directory for the user
+
+while IFS= read -r line
+do
+	IFS=":" read -ra vals <<< "$line"
+	printf "%s:%s:%s\n" "${vals[0]}" "${vals[2]}" "${vals[5]}"
+done < "/etc/passwd"
